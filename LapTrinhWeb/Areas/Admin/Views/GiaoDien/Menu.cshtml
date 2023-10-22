@@ -1,0 +1,25 @@
+﻿@model IEnumerable <LapTrinhWeb.Models.Menu>
+@using LapTrinhWeb.Models;
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutGiaoDien.cshtml";
+    BanHang_testEntities1 db = new BanHang_testEntities1();
+    List<Menu> DanhSachMenu = db.Menus.ToList();
+}
+
+<section class="menu" id="menu">
+    <div class="box-container">
+        @foreach(var item in DanhSachMenu) { 
+        <div class="box">
+            <img src="~/Areas/Admin/content/images/@item.HinhAnh" alt="" />
+            <h3>@item.TenMenu</h3>
+            <h4>Loại:@item.LoaiMenu.TenLoaiMenu</h4>
+            <div class="price">@item.GiaBan</div>
+            <a href="Menu1?idMenu=@item.ID" class="btn">Buy</a>
+        </div>
+
+        }
+
+    </div>
+</section>
+

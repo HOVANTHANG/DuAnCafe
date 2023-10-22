@@ -1,0 +1,65 @@
+﻿@model IEnumerable<LapTrinhWeb.Models.GioHangSanPham>
+@using LapTrinhWeb.Models;
+
+@{
+    ViewBag.Title = "DanhSach";
+    Layout = null;
+    BanHang_testEntities1 db = new BanHang_testEntities1();
+}
+@{
+    var stt = 0;
+}
+
+<style>
+    img {
+        height: 50px;
+        width: auto;
+    }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Hình Ảnh</th>
+            <th scope="col">Tên Sản Phẩm</th>
+            <th scope="col"> Số Lượng</th>
+            <th scope="col">Tổng Tiền</th>
+            <th scope="col">###</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            stt++;
+            ViewBag.idNguoiDung = item.idNguoiDung;
+            <tr>
+                <td>@stt</td>
+                <td>
+                    <img src="~/Areas/Admin/content/images2/@item.SanPham.HinhAnh" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSanPham)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTien)
+                </td>
+                <td>
+                    <a href="~/GioHangSP/Xoa?idGioHangsp=@item.ID">Delete</a> |
+                    <a href="~/GioHangSP/CapNhat?idGioHangsp=@item.ID">Edit</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+    <tfoot>
+
+        <tr>
+            <td colspan="4">Tổng Tiền:@ViewBag.tongtien vnđ</td>
+        </tr>
+    </tfoot>
+</table>
+<button><a href="~/GioHangSP/XuLyThanhToan?idNguoiDung=@ViewBag.idNguoiDung" style="text-decoration:none;">Thanh Toán</a></button>

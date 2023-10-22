@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutGiaoDien.cshtml";
+}
+
+<section class="menu" id="menu">
+    <div class="box-container">
+        <div class="box">
+            <img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/1675357918_cloudfee-hanh-nhan-nuong-min_5878cf79201a4742a022b038076b3c68_large.png" alt="">
+            <h3>CaFe đen</h3>
+            <h4>(Cà phê nguyên chất)</h4>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+
+        </div>
+
+        <div class="box">
+            <img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/1669736893_hi-tea-vai_06cc9054fb7e4cf5a56649703b9a8a51_large.png" data-src="//product.hstatic.net/1000075078/product/1669736893_hi-tea-vai_06cc9054fb7e4cf5a56649703b9a8a51_large.png" alt="hi tea vai">
+            <h3>Cà phê Trứng</h3>
+            <h4>(Béo ngậy thơm ngon)</h4>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+
+
+        <div class="box">
+            <img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/1669736835_ca-phe-sua-da_420319c0ee4d460a8dc5e287b951e405_large.png" data-src="//product.hstatic.net/1000075078/product/1669736835_ca-phe-sua-da_420319c0ee4d460a8dc5e287b951e405_large.png" alt="ca phe sua da">
+            <h3>Cà Phê Sữa</h3>
+            <h4>(vị dắng cafe hòa vị ngọt sữa)</h4>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+
+
+        <div class="box">
+            <img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/1696220170_phin-sua-tuoi-banh-flan_3d3873099d1a4de08335edc70f1cccc4_large.jpg" data-src="//product.hstatic.net/1000075078/product/1696220170_phin-sua-tuoi-banh-flan_3d3873099d1a4de08335edc70f1cccc4_large.jpg" alt="phin sua tuoi banh flan">
+            <h3>Trà Sữa Matcha</h3>
+            <h4>(Tươi mát,ngon tuyệt vời)</h4>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+
+        <div class="box">
+            <img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/1696220139_tra-xanh-espresso-marble_6645d935c1b84d9aa4909c38a8560d6c_large.jpg" data-src="//product.hstatic.net/1000075078/product/1696220139_tra-xanh-espresso-marble_6645d935c1b84d9aa4909c38a8560d6c_large.jpg" alt="tra xanh espresso marble">
+            <h3>Trà Sữa việt quất</h3>
+            <h4>(Uống là mê)</h4>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+
+        <div class="box">
+            <img class=" ls-is-cached lazyloaded" src="//product.hstatic.net/1000075078/product/1686716532_dd-suada_6053980e5bff4947b65fcd6e535c4705_large.jpg" data-src="//product.hstatic.net/1000075078/product/1686716532_dd-suada_6053980e5bff4947b65fcd6e535c4705_large.jpg" alt="duong den sua da">
+            <h3>Trà sữa full toping</h3>
+            <h4>(Thả ga lựa chon!)</h4>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <img class=" ls-is-cached lazyloaded" src="//product.hstatic.net/1000075078/product/1639377770_cfsua-nong_f2bb974390e74f10b6949773a1627375_large.jpg" data-src="//product.hstatic.net/1000075078/product/1639377770_cfsua-nong_f2bb974390e74f10b6949773a1627375_large.jpg" alt="ca phe sua nong">
+            <h3>Cà Phê</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/bac-siu" title="Bạc Sỉu"><img class=" ls-is-cached lazyloaded" src="//product.hstatic.net/1000075078/product/1639377904_bac-siu_1b89c9285a414913a152f93277991c74_large.jpg" data-src="//product.hstatic.net/1000075078/product/1639377904_bac-siu_1b89c9285a414913a152f93277991c74_large.jpg" alt="bac siu"></a>
+            <h3>Bánh kem tình yêu</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/duong-den-marble-latte" title="Đường Đen Marble Latte"><img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/1686716537_dd-latte_e10fbeb0a9be4002844d9203fcab907e_large.jpg" data-src="//product.hstatic.net/1000075078/product/1686716537_dd-latte_e10fbeb0a9be4002844d9203fcab907e_large.jpg" alt="duong den marble latte"></a>
+            <h3>Bánh Single</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/caramel-macchiato-da" title="Caramel Macchiato Đá"><img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/caramel-macchiato_143623_b580838a914048d4bb4ff6b28383706d_large.jpg" data-src="//product.hstatic.net/1000075078/product/caramel-macchiato_143623_b580838a914048d4bb4ff6b28383706d_large.jpg" alt="caramel macchiato da"></a>
+            <h3>Kem cuộn</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/caramel-macchiato-nong" title="Caramel Macchiato Nóng"><img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/caramelmacchiatonong_168039_cf24362398084ac2af9fce3cf245d9b7_large.jpg" data-src="//product.hstatic.net/1000075078/product/caramelmacchiatonong_168039_cf24362398084ac2af9fce3cf245d9b7_large.jpg" alt="caramel macchiato nong"></a>
+            <h3>Kem cuộn</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/latte-da" title="Latte Đá"><img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/latte-da_438410_9b75161da81544eda4340515f84397e4_large.jpg" data-src="//product.hstatic.net/1000075078/product/latte-da_438410_9b75161da81544eda4340515f84397e4_large.jpg" alt="latte da"></a>
+            <h3>Kem cuộn</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/latte-nong" title="Latte Nóng"><img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/latte_851143_f86ddcd9518c400b8faa8d5491c6097d_large.jpg" data-src="//product.hstatic.net/1000075078/product/latte_851143_f86ddcd9518c400b8faa8d5491c6097d_large.jpg" alt="latte nong"></a>
+            <h3>Kem cuộn</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/americano-da" title="Americano Đá"><img class=" lazyloaded" src="//product.hstatic.net/1000075078/product/classic-cold-brew_791256_917d66162da042008f916eb149476c2e_large.jpg" data-src="//product.hstatic.net/1000075078/product/classic-cold-brew_791256_917d66162da042008f916eb149476c2e_large.jpg" alt="americano da"></a>
+            <h3>Kem cuộn</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+        <div class="box">
+            <a href="/products/cappuccino-da" title="Cappuccino Đá"><img class=" ls-is-cached lazyloaded" src="//product.hstatic.net/1000075078/product/capu-da_487470_1d9c592fd64b45db86fcef1fe6ec2b72_large.jpg" data-src="//product.hstatic.net/1000075078/product/capu-da_487470_1d9c592fd64b45db86fcef1fe6ec2b72_large.jpg" alt="cappuccino da"></a>
+            <h3>Kem cuộn</h3>
+            <div class="price">$100 <span>200</span></div>
+            <button onclick="passImageSrcToAnotherPage()" class="btn">Buy</button>
+        </div>
+    </div>
+</section>
+

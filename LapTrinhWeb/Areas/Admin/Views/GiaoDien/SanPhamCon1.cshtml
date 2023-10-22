@@ -1,0 +1,45 @@
+﻿@model LapTrinhWeb.Models.SanPham
+@{
+    ViewBag.Title = "SanPhamCon1";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutGiaoDien.cshtml";
+}
+
+<section class="lienhe1" id="lienhe1">
+    <div class="row">
+        <div class="mota">
+            <h1>Mô tả sản phẩm</h1>
+            <p>
+                Cà phê Original 1 của The Coffee House với 100% thành phần cà phê Robusta Đăk Lăk, vùng trồng cà phê ngon nhất Việt Nam. Bằng cách áp dụng kỹ thuật rang xay hiện đại, Cà phê Original 1 mang đến trải nghiệm tuyệt vời khi uống cà phê tại nhà với hương vị đậm đà truyền thống hợp khẩu vị của giới trẻ sành cà phê.
+
+            </p>
+        </div>
+        <img src="~/Areas/Admin/content/images2/@Model.HinhAnh" />
+
+        <form id="order-form" method="post" action="@Url.Action("Them", "GioHangSP")">
+            @using (Html.BeginForm("Them", "GioHangSP", FormMethod.Post))
+            {
+                <input type="hidden" name="idSanPham" value="@Model.ID">
+
+
+                var user = (LapTrinhWeb.Models.NguoiDung)HttpContext.Current.Session["user"];
+
+                <input type="hidden" name="idNguoiDung" value="@user.ID">
+
+
+                <input type="hidden" name="TenSanPham" value="@Model.TenSanPham">
+                <input type="hidden" name="GiaBan" value="@Model.GiaBan">
+                <h3>cà phê rang xay (15.89$)</h3>
+                <div class="inputB">
+                    <span>Số lượng :</span>
+                    <label for="quantity"></label>
+                    <input style="color: black;" type="number" id="quantity" name="SoLuong" min="1" max="10000" step="1" value="1">
+                </div>
+                <input type="submit" value="Đặt Hàng" class="btn">
+            }
+            </form>
+            
+        </div>
+            
+</section>
+
+

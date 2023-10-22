@@ -1,0 +1,44 @@
+﻿@model IEnumerable<LapTrinhWeb.Models.SanPham>
+@{
+    ViewBag.Title = "SanPham";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutGiaoDien.cshtml";
+}
+<section class="sanpham" id="sanpham">
+    <div class="heading1"> <h1 style="color: black;"><span>sản phẩm tại nhà </span> !!</h1></div>
+    <div class="box-container">
+
+        @foreach (var item in Model)
+        {
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <a href="SanPhamCon1?idSanPham=@item.ID">
+                    <img src="~/Areas/Admin/content/images2/@item.HinhAnh" alt=""/>
+                </a>
+            </div>
+            <div class="content">
+                <h3>@item.TenSanPham </h3>
+                <div class="batdau">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h4>Số Lượng:@item.So_Luong</h4>
+                <h4>Nhà Sản Xuất:@item.NhaSanXuat.TenNhaSanXuat</h4>
+                <div class="price">@item.GiaBan <span>$30</span></div>
+            </div>
+        </div>
+        }
+
+
+
+    </div>
+</section>
+
+

@@ -1,0 +1,272 @@
+﻿.cart-items-container {
+    text-align: center;
+    width: 50%;
+    max-width: 600px;
+    padding-top: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: scroll;
+}
+
+.cart-items-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.cart-items-container table {
+    width: 100%;
+}
+
+    .cart-items-container table thead tr th:first-child {
+        text-align: left;
+    }
+
+    .cart-items-container table tr td {
+        border-bottom: 1px solid #fff;
+        padding: 12px 0;
+    }
+
+    .cart-items-container table thead tr th:last-child {
+        text-align: right;
+    }
+
+.cart-items-container tbody tr td:last-child {
+    text-align: right;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Thêm padding cho mỗi sản phẩm trong giỏ hàng */
+    border-bottom: 1px solid #ccc;
+    /* Thêm đường viền dưới mỗi sản phẩm trong giỏ hàng */
+}
+
+#order-button:hover {
+    background-color: #ff9a00;
+}
+
+.cart-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .cart-item button:hover {
+        background-color: darkred;
+    }
+
+#buy-amount {
+    display: flex;
+}
+
+    #buy-amount button {
+        width: 35px;
+        height: 35px;
+        outline: none;
+        background: none;
+        border: 1px solid #ececec;
+        cursor: pointer;
+    }
+
+        #buy-amount button:hover {
+            background-color: #ececec;
+        }
+
+        #buy-amount button svg {
+            color: #909090;
+        }
+
+        #buy-amount button:hover svg {
+            color: #4f4f4f;
+        }
+
+    #buy-amount #amount {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #ececec;
+    }
+
+
+/* Thông báo */
+
+.thongbao {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 40%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .thongbao img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .thongbao strong {
+        font-size: 18px;
+        color: #f7f7f7;
+    }
+
+th {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.row {
+    background-color: white;
+    padding-top: 100px;
+}
+
+    .row .anh img {
+        width: 50%;
+        height: 450px;
+        float: left;
+    }
+
+    .row .thongtin {
+        padding-top: 120px;
+        padding-left: 50px;
+        align-items: center;
+        float: left;
+    }
+
+.toping {
+    margin-top: 20px;
+}
+
+.dathang {
+    margin-top: 40px;
+    background-color: rgb(193, 95, 15);
+    height: 40px;
+    border: 2px solid orange;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+

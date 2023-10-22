@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5521390aa43940c0ba3f800e6609df07" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="BanHang_testModel.ChucNang" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanHang_testModel.KhachHang" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanHang_testModel.NguoiDung" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BanHang_testModel.PhanQuyen" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="BanHang_testModel.FK_PhanQuyen_ChucNang" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BanHang_testModel.NhanVien" Width="1.5" PointX="5.375" PointY="1" />
+        <AssociationConnector Association="BanHang_testModel.FK_PhanQuyen_NhanVien" />
+        <EntityTypeShape EntityType="BanHang_testModel.LoaiMenu" Width="1.5" PointX="7.375" PointY="1.375" />
+        <EntityTypeShape EntityType="BanHang_testModel.LoaiSanPham" Width="1.5" PointX="5.375" PointY="5.625" />
+        <EntityTypeShape EntityType="BanHang_testModel.Menu" Width="1.5" PointX="9.625" PointY="1" />
+        <EntityTypeShape EntityType="BanHang_testModel.NhaSanXuat" Width="1.5" PointX="5.375" PointY="8.625" />
+        <EntityTypeShape EntityType="BanHang_testModel.SanPham" Width="1.5" PointX="7.625" PointY="5" />
+        <AssociationConnector Association="BanHang_testModel.FK_Menu_LoaiMenu" />
+        <AssociationConnector Association="BanHang_testModel.FK_SanPham_LoaiSanPham" />
+        <AssociationConnector Association="BanHang_testModel.FK_SanPham_NhaSanXuat" />
+        <EntityTypeShape EntityType="BanHang_testModel.GioHang" Width="1.5" PointX="11.875" PointY="2.125" />
+        <AssociationConnector Association="BanHang_testModel.FK_GioHang_Menu" />
+        <AssociationConnector Association="BanHang_testModel.FK_GioHang_NguoiDung" />
+        <EntityTypeShape EntityType="BanHang_testModel.GioHangSanPham" Width="1.5" PointX="9.875" PointY="6.625" />
+        <AssociationConnector Association="BanHang_testModel.FK_GioHangSanPham_NguoiDung" />
+        <AssociationConnector Association="BanHang_testModel.FK_GioHangSanPham_SanPham" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
