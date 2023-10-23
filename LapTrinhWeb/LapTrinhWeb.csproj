@@ -274,7 +274,6 @@
     <Content Include="Areas\Admin\Views\Shared\LayoutGiaoDien.cshtml" />
     <Content Include="Areas\Admin\Views\GiaoDien\Menu.cshtml" />
     <Content Include="Areas\Admin\Views\GiaoDien\Blogs.cshtml" />
-    <Content Include="Areas\Admin\Views\GiaoDien\GioiThieu.cshtml" />
     <Content Include="Areas\Admin\Views\GiaoDien\SanPhamCon1.cshtml" />
     <Content Include="Areas\Admin\Views\GiaoDien\Menu1.cshtml" />
     <Content Include="Areas\Admin\Views\GioHang\Them.cshtml" />
@@ -285,6 +284,7 @@
     <Content Include="Areas\Admin\content\images\blog1.png" />
     <Content Include="Areas\Admin\content\images\blong22.png" />
     <Content Include="Areas\Admin\Views\GioHangSP\DanhSach.cshtml" />
+    <Content Include="Areas\Admin\Views\GiaoDien\GioiThieu.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
