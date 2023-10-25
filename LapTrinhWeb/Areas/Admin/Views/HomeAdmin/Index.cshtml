@@ -1,8 +1,93 @@
-﻿
+﻿@model IEnumerable<LapTrinhWeb.Models.Menu>
+@using LapTrinhWeb.Models;
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+    BanHang_testEntities1 db = new BanHang_testEntities1();
+    var listMenu = db.Menus.ToList();
 }
 
-<h2>Index</h2>
+<style>
+    .container {
+        align-content: center;
+        padding: 0 150px;
+    }
+    .hinhanh img{
+        height:50px;
+        width:auto;
+    }
+</style>
 
+
+<div class="container">
+    <h2>Them Menu</h2>
+
+    <p>
+        <a href="~/Admin/HomeAdmin/ThemMoiMenu">Them</a>
+    </p>
+    <div class="row">
+        <div class="col-md-12">
+
+            <form method="get" @Url.Action("Index","HomeAdmin")>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control" name="filter" placeholder="Nhập tên menu" value="@ViewBag.filter">
+                </div>
+                <div class="col-xs-2">
+                    <button type="submit" class="btn btn-success mt-2 mb-2">Tìm</button>
+                </div>
+            </form>
+
+        </div>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.idLoaiMenu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenMenu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HinhAnh)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GiaBan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </th>
+                <th>###</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiMenu.TenLoaiMenu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenMenu)
+            </td>
+            <td>
+                <div class="hinhanh">
+                <img src="~/Areas/Admin/content/images/@item.HinhAnh" />
+                    </div>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThai)
+            </td>
+
+            <td>
+                <a href="~/Admin/HomeAdmin/CapNhat?idMenu=@item.ID">Edit</a> |
+                <a href="~/Admin/HomeAdmin/XoaMenu?idMenu=@item.ID">Delete</a>
+            </td>
+        </tr>
+            }
+
+        </table>
+
+    </div>
+</div>

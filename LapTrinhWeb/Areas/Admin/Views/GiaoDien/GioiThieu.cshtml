@@ -72,17 +72,13 @@
         </section>
         <a href="#" style="color:azure;">
             <i class="fa fa-user fa-fw"></i>
-              @{
-                   var user = (LapTrinhWeb.Models.NguoiDung)HttpContext.Current.Session["user"];
-                   <span>@user.Username</span>
 
-               }
         </a>
 
 
 
         <a href="~/Admin/HomeAdmin/DangXuat " style="color:azure;"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-
+        <a href="~/Admin/HomeAdmin/DangNhap " style="color:azure;"><i class="fa fa-sign-out fa-fw"></i>Login</a>
 
     </header>
 

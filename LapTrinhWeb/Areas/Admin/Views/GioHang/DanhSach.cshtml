@@ -56,8 +56,10 @@
                 @Html.DisplayFor(modelItem => item.TongTien)
             </td>
             <td>
-                <a href="~/GioHang/Xoa?idGioHang=@item.ID">Delete</a> |
-                <a href="~/GioHang/CapNhat?idGioHang=@item.ID">Edit</a>
+
+                <a href="~/GioHang/Xoa?idGioHang=@item.ID">Delete</a> ||
+                <a href="~/GioHang/CapNhat?idmenu=@item.idMenu">Edit</a> 
+
             </td>
         </tr>
         }

@@ -69,9 +69,11 @@ namespace LapTrinhWeb.Areas.Admin.Controllers
             db.SaveChanges();
             return  RedirectToAction("DanhSach");
         }
-        public ActionResult CapNhat(int idGioHang)
+        public ActionResult CapNhat(int idmenu)
         {
-            return View();
+            BanHang_testEntities1 db = new BanHang_testEntities1();
+            var menu = db.Menus.SingleOrDefault(m => m.ID == idmenu);
+            return View(menu);
         }
         [HttpPost]
         public ActionResult CapNhat(GioHang model)

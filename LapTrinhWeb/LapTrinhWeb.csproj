@@ -285,6 +285,9 @@
     <Content Include="Areas\Admin\content\images\blong22.png" />
     <Content Include="Areas\Admin\Views\GioHangSP\DanhSach.cshtml" />
     <Content Include="Areas\Admin\Views\GiaoDien\GioiThieu.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\ThemMoiMenu.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\CapNhat.cshtml" />
+    <Content Include="Areas\Admin\Views\GiaoDien\TimKiem.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -16,7 +16,7 @@ namespace LapTrinhWeb
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "NhanVien", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "GiaoDien", action = "TrangChu", id = UrlParameter.Optional }
             );
         }
     }

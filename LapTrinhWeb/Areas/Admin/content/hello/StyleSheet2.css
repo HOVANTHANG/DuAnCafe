@@ -507,7 +507,7 @@ section {
     }
 
 .sec-intro {
-    padding: 0;
+    margin-top:82px;
 }
 
 .image-half img {
@@ -1332,7 +1332,7 @@ footer {
 
 .duoi {
     display: flex;
-    background-color: rgb(117, 98, 98);
+    background-color: #382c2c;
     font-family: Arial, Helvetica, sans-serif;
 }
 
